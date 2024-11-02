@@ -7,13 +7,13 @@ interface = "wlan0"
 # Set the DNS server IP addresses
 dns_servers = ["8.8.8.8", "1.1.1.1"]
 subnet_mask = "255.255.255.0"
-gateway_ip = "192.168.254.254"
+gateway_ip = ""
 # Set the game server IP address (replace with the actual IP address)
-game_server_ip = "161.202.206.59"
-game_server_port = "10003"  # Fixed typo in variable name
+game_server_ip = ""
+game_server_port = ""  # Fixed typo in variable name
 
 # Set the MTU value (default is 1500)
-mtu = 1400
+mtu = 
 
 # Set the TCP optimization settings
 tcp_optimization_enabled = True
@@ -21,7 +21,7 @@ tcp_window_size = "65535"
 tcp_mtu_probing = "1"
 
 # Define the IP address (replace with the actual IP address)
-ip_address = "192.168.254.10"  # Example IP address, change as needed
+ip_address = ""  # Example IP address, change as needed
 
 # Apply the changes
 os.system(f"ip link set {interface} mtu {mtu}")
